@@ -14,24 +14,25 @@ const Nav = styled.div`
     text-align: center;
     font-size: 22px;
     font-family: 'Oleo Script', cursive;
-      styled.p {
-        
-      }
+    p {
+      display: flex;
+    }
 `;
     
 class Navbar extends Component{
   render(){
     return (
       <Nav>
-      <div>
         <h3><FaInstagram /> | Instaclone</h3>
-        <FaSearch/><input type="text"/>
+        <p>
+        <FaSearch/>
+        <input type="text"/>
+        </p>
         <div>
           <FaCompass />
           <FaHeartO />
           <FaUser />
         </div>
-      </div>
       </Nav>
 
       
