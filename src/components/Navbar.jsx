@@ -19,7 +19,9 @@ border-bottom: 1px solid rgba(0,0,0,.0975);
     search {
     }
     tags {
-      
+      width: 26px;
+      display: flex;
+      justify-content: space-around;
     }
 `;
 
