@@ -7,6 +7,14 @@ import styled from 'styled-components';
 const PostContainer = styled.div`
   background-color: white;
   border: 1px solid black;
+  border-radius: 3px;
+  width: 95vw;
+  max-width: 600px;
+  margin: 20px auto;
+`
+
+const PostProfile = styled.h1`
+  
 `
 
 class Post extends Component{

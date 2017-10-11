@@ -11,7 +11,7 @@ align-items: center;
 padding: 26px 5vw;
 width: 90vw;
 height: 25px;
-border-bottom: 1px solid rgba(0,0,0,.0975);
+border-bottom: 1px solid rgba(0,0,0,.1);
     h3 {
     font-family: 'Oleo Script', cursive;
     font-size: 26px;
@@ -19,7 +19,7 @@ border-bottom: 1px solid rgba(0,0,0,.0975);
     search {
     }
     tags {
-      width: 26px;
+      width: 25%;
       display: flex;
       justify-content: space-around;
     }
