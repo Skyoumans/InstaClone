@@ -3,7 +3,7 @@ import { FaInstagram, FaUser, FaHeartO, FaCompass, FaSearch } from 'react-icons/
 import styled from 'styled-components';
 
 
-const mainImage = styled.p`
+const nav = styled.div`
   display: block;
   -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -18,10 +18,9 @@ const mainSearch = styled
 class Navbar extends Component{
   render(){
     return (
+      <Nav>
       <div>
-      <mainImage>        
         <h3><FaInstagram /> | Instaclone</h3>
-        </mainImage>      
         <FaSearch/><input type="text"/>
         <div>
           <FaCompass />
@@ -29,6 +28,7 @@ class Navbar extends Component{
           <FaUser />
         </div>
       </div>
+      </Nav>
 
       
     );
