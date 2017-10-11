@@ -3,18 +3,22 @@ import { FaInstagram, FaUser, FaHeartO, FaCompass, FaSearch } from 'react-icons/
 import styled from 'styled-components';
 
 
-const nav = styled.div`
-  display: block;
+const Nav = styled.div`
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
   -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     text-align: center;
-    font-size: 100px;
+    font-size: 22px;
+    font-family: 'Oleo Script', cursive;
+      styled.p {
+        
+      }
 `;
-const mainSearch = styled
     
-
 class Navbar extends Component{
   render(){
     return (
