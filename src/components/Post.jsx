@@ -13,8 +13,34 @@ const PostContainer = styled.div`
   margin: 20px auto;
 `
 
-const PostProfile = styled.h1`
-  
+const PostUser = styled.h1`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+  }
+  span {
+    padding-left: 5px;
+    font-weight: bold;
+  }
+`;
+const Content = styled.div`
+  img{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+`;
+const Info = styled.div`
+  padding: 5px 16px
+`;
+const Actions = styled.div`
+  svg{
+    padding: 5px;
+  }
 `
 
 class Post extends Component{
@@ -23,14 +49,16 @@ class Post extends Component{
     const { post } = this.props;
     return(
       <PostContainer>
-        <div>
+        <PostUser>
           <img src={post.user.profile_pic} alt={post.user.username} />
-          <p>{post.user.username}</p>
-        </div>
-        <div>
+          <span>{post.user.username}</span>
+        </PostUser>
+        <Content>
           <img src={post.image.url} />
+        </Content>
+        <Info>
           <p>{post.caption}</p>
-        </div>
+        </Info>
         <div>
           <FaHeartO />
           <FaCommentO />
