@@ -15,9 +15,9 @@ border-bottom: 1px solid rgba(0,0,0,.1);
     h3 {
     font-family: 'Oleo Script', cursive;
     font-size: 26px;
-    }
+    },
     search {
-    }
+    },
     tags {
       width: 25%;
       display: flex;
